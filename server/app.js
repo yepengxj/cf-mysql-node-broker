@@ -35,7 +35,7 @@ app.use(bodyParser.urlencoded({
    extended: true 
 }));
 app.use(express.static(path.join(application_root, "public")));
-app.use('/v2', basicAuth.auth('test', 'test'));
+app.use('/v2', basicAuth.auth('test', 'ae45-41dd2b9f95df'));
 app.use('/', routes);
 
 /* config */
