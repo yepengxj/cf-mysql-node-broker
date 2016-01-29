@@ -1,10 +1,3 @@
-FROM nodejs_web:latest
+FROM node:5.5-onbuild
 MAINTAINER LIXW
 
-ADD . /tmp/
-WORKDIR /tmp/
-
-RUN npm install 
-EXPOSE 9000
-
-CMD ["npm", "start"]
